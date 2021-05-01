@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Team Activity</title>
+</head>
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <button type="button" id="btn">Submit</button>
+    <button type="button" id="add">+</button>
+    <div id="divEnter">
+    </div>
+    <script>
+        document.getElementById("btn").addEventListener("click", () => {
+        let input1 = document.getElementById("input1").value;
+        if (isNaN(input1)){
+            document.getElementById("divEnter").innerText = 'Only numbers can be submitted. Please try again.';
+        } else {
+            document.getElementById("divEnter").innerText = sumNumber(parseInt(input1));
+        }
+        });
+
+        document.getElementById("add").addEventListener("click", () => {
+        let input1 = document.getElementById("input1").value;
+        let input2 = document.getElementById("input2").value;
+        if (isNaN(input1) || isNaN(input2)){
+            document.getElementById("divEnter").innerText = 'Only numbers can be submitted. Please try again.';
+        } else {
+            document.getElementById("divEnter").innerText = addition(parseInt(input1), parseInt(input2));
+        }
+        });
+
+        const sumNumber = number => {
+            let totalSum = 0;
+            for (let i=0; i <= number; i++) {
+                totalSum += i;
+            }
+            return totalSum;
+        }
+
+        const addition = (input1, input2) => input1 + input2;
+
+    </script>
+</body>
+</html>

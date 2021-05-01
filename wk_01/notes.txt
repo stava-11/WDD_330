@@ -1,0 +1,17 @@
+Doing Stuff with Web Things:
+
+This content was not new to me, so the only notes I needed to take were on the local storage. 
+I have never used this before and found it interesting that it is available. 
+
+local storage works with a key: value pair which is pretty easy to work with. You just need to set
+the item :
+     localStorage.setitem(key, value);
+then you get the item:
+     localStorage.getitem(key);
+I read more about this in w3schools, but it was not very informative, except that it stated this is
+read only.
+
+My question is:
+
+How do we go about deleting the information saved in local storage?
+Also, how safe is it to save items in local storage compared to a session?

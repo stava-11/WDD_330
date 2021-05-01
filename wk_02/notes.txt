@@ -1,0 +1,46 @@
+Week 2
+Notes from reading Eloquent Javascript
+
+Ch. 3 - Functions
+
+    When multiple bindings have the same name, code can only see the innermost one.
+
+    Function Declaration
+        function getRectArea(width, height)
+            return width * height;
+        };
+
+    This function can be placed after it is used in the code, the others must come before they are used.
+
+    Function Expression
+        const getRectArea = function(width, height) {
+            return width * height;
+        };
+                            
+    Arrow Function
+        const getRectArea = (width, height) => width * height;
+                                
+    Closure
+        Being able to reference a specific instance of a local binding in an enclosing scope
+                                
+    Recursion
+        Recursion is allowed in javascript. This means that the function can call itself.
+        This is used to help simplify a complex problem.
+                        
+Chapter 4 - Data Structures
+                
+    Object.keys will return an array of strings which contains the property names of the object.
+                    
+    array.shift() will remove the first item in the array.
+    array.unshift will add the item(s) to the beginning of the array.
+    
+    Rest Parameter
+        let numbers = [5, 1, 7];
+        console.log(max(...numbers));
+        // -> 7        
+
+Questions
+
+    What are some great examples of using recursion to break down a complex problem?
+
+                            

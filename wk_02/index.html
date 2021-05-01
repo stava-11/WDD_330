@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Week 2</title>
+</head>
+<body>
+    <main>
+        <h1>Week 2</h1>
+        <section>
+            <h2>Notes from reading Eloquent Javascript</h2>
+            <ul>
+                <li>
+                    Ch. 3 - Functions<br>
+                    <ul>
+                        <li>When multiple bindings have the same name, code can only see the innermost one.</li>
+                        <li>
+                            Function Declaration
+                            <ul>
+                                <li>
+                                    function getRectArea(width, height) {<br>
+                                        return width * height;<br>
+                                    };
+                                </li>
+                                <li>This function can be placed after it is used in the code, the others must come before they are used.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Function Expression
+                            <ul>
+                                <li>
+                                    const getRectArea = function(width, height) {<br>
+                                        return width * height;<br>
+                                    };
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Arrow Function
+                            <ul>
+                                <li>
+                                    const getRectArea = (width, height) => width * height;<br>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Closure
+                            <ul>
+                                <li>
+                                    Being able to reference a specific instance of a local binding in an enclosing scope
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Recursion
+                            <ul>
+                                <li>
+                                    Recursion is allowed in javascript. This means that the function can call itself.
+                                </li>
+                                <li> This is used to help simplify a complex problem.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Chapter 4 - Data Structures
+                    <ul>
+                        <li>
+                            Object.keys will return an array of strings which contains the property names of the object.
+                        </li>
+                        <li>array.shift() will remove the first item in the array.</li>
+                        <li>array.unshift will add the item(s) to the beginning of the array.</li>
+                        <li>Rest Parameter
+                            <ul>
+                                <li>
+                                    let numbers = [5, 1, 7];<br>
+                                    console.log(max(...numbers));<br>
+                                    // -> 7                                
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Questions
+                    <ul>
+                        <li>What are some great examples of using recursion to break down a complex problem?</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
