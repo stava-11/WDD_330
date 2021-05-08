@@ -19,6 +19,7 @@ h1 {
 
 section {
     background-color: white;  
+    max-width: 100%;
     padding: 1rem;
 }
 

@@ -1,0 +1,11 @@
+What did I do since the last meeting?
+During week two I read all the chapters in Eloquent Javascript because for some reason I was unable to
+access the material in the other book. I made sure to go through the code in the topics that was new to me to understand
+what was being done in the code and be able to understand it. I also followed up on making the webpage look more professional.
+
+What am I going to do next?
+I am going to read through the assigned material and work with the code examples for the sections that I am unfamiliar with.
+I am also going to change the home page to look more professional. 
+
+What are my blockers?
+At this point I really don't know of any blockers. I look forward to this next week of study.

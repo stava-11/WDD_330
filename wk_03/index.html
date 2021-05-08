@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Week 3</title>
+</head>
+<body>
+    <main>
+        <h1>Week 3</h1>
+        <section>
+            <h2>Notes from Javascript: Novice to Ninja</h2>
+            <ul>
+                <li>
+                    Ch. 5 - Objects<br>
+                    <ul>
+                        <li>Object literals are a distinguishing feature of the JavaScript language, as they allow objects to be created quickly without the need for defining a class. They also provide a useful way of organizing your code without polluting the global namespace.</li>
+                        <li>
+                            Object
+                            <ul>
+                                <li>
+        <pre>
+            <code>
+                const superman = {
+                    name: 'Superman',
+                    'real name': 'Clark Kent',
+                    height: 75,
+                    weight: 235,
+                    hero: true,
+                    villain: false,
+                    allies: ['Batman','Supergirl','Superboy'],
+                    fly() {
+                        return 'Up, up and away!';
+                    }
+                };
+            </code>
+        </pre>
+                                </li>
+                                <li>Each property is a key-value pair separated by commas</li>
+                                <li>The property 'real name' in the example above needs to be quoted because it contains a space. Another way to name it is real_name or realName.</li>
+                                <li>All properties are mutable which means they can be changed, removed, added even if it was declared using const.</li>
+                                <li>Accessing Properties: superman.name or superman['name']</li>
+                                <li>Dot notation is more common, but bracket notation allows you to access properties with nonstandard names and also lets you evaluate an expression and use it as the property keys</li>
+                                <li>Computed Properties were made available in ES6</li>
+                                <li>Finding all the properties of an Object:
+                                    <ul>
+                                        <li>
+    <pre>
+        <code>
+            for(const key in superman) {
+                console.log(key + ": " + superman[key]);
+            }
+            << "name: Superman"
+            << "real name: Clark Kent"
+            << "height: 75"
+            << "weight: 235"
+            << "hero: true"
+            << "villain: false"
+            << "allies: Batman,Supergirl,Superboy"
+            << "fly: function (){
+                console.log(\"Up, up and away!\");
+            }"
+        </code>
+    </pre>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Adding Properties: superman.city = 'Metropolis';</li>
+                                <li>Removing properties: delete superman.fly</li>
+                            </ul>
+                        </li>
+                        <li>JSON
+                            <ul>
+                                <li>Property names must be double-quoted</li>
+                                <li>Permitted values are double-quoted strings, numbers, true, false, null, arrays and objects</li>
+                                <li>Functions are not permitted values</li>
+                                <li>The parse() method takes a string of data in JSON format and returns a JavaScript object:</li>
+                                <li>The stringify() method does the opposite, taking a JavaScript object and returning a string of JSON data, as can be seen in the example:</li>
+                                <li>You can also add a space argument that will add new lines between each key-value pair, which is useful when displaying the results in a browser:
+                                    <ul>
+                                        <li>
+    <pre>
+        <code>
+            JSON.stringify(wonderWoman, null, " ");
+            <<  '{\n "name": "Wonder Woman",\n "real name": "Diana Prince",\n "height": 72,\n "weight": 165,\n "hero":      <br> true,\n "villain": false,\n "allies": [\n  "Wonder Girl",\n  "Donna Troy",\n  "Superman"\n ]\n}'
+        </code>
+    </pre>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>MATH
+                            <ul>
+                                <li>
+    <pre>
+        <code>
+            Math.PI // The ratio of the circumference and diameter of a circle
+            << 3.141592653589793
+            Math.SQRT2 // The square root of 2
+            << 1.4142135623730951
+            Math.SQRT1_2 // The reciprocal of the square root of 2
+            << 0.7071067811865476
+            Math.E // Euler's constant
+            << 2.718281828459045
+            Math.LN2 // The natural logarithm of 2
+            << 0.6931471805599453
+            Math.LN10 // The natural logarithm of 10
+            << 2.302585092994046
+            Math.LOG2E // Log base 2 of Euler's constant
+            << 1.4426950408889634
+            Math.LOG10E // Log base 10 of Euler's constant
+            << 0.4342944819032518
+        </code>
+    </pre>
+                                </li>
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank">There are a ton of methods available for math!</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Date Object
+                            <ul>
+                                <li>This creates the current date and time: const today = new Date();</li>
+                                <li>The epoch is 1st January 1970 and is used as a reference point in time to measure dates.</li>
+                                <li>date.getDay() returns the day as a number</li>
+                                <li>date.getMonth() returns the month as a number</li>
+                                <li>date.getFullYear() returns the year as a number</li>
+                                <li>date.getTime() returns a timestamp representing the number of milliseconds since the Epoch </li>
+                            </ul>
+                        </li>
+                        <li> Regular Expression (RegEx)
+                            <ul>
+                                <li>const vowels = /[aeiou]/</li>
+                                <li>All uppercase letters: /[A-Z]/</li>
+                                <li>The digits 0-9 can be represented as: /[0-9]/</li>
+                                <li>Everything except a capital letter: /[^A-Z]/</li>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Chapter 6 - Document Object Model (DOM)
+                    <ul>
+                        <li>
+                            The DOM treats everything on a web page as a node. HTML tags, the text inside these tags, even the attributes of a tag are all nodes. The HTML tag is the root node, and every other part of the document is a child node of this.
+                        </li>
+                        <li>document.getElementById()</li>
+                        <li>document.getElementsByTagName()</li>
+                        <li>document.getElementsByClassName()</li>
+                        <li>document.querySelector()
+                            <ul>
+                                <li>by id: document.querySelectorAll('.hero');</li>
+                            </ul>
+                        </li>
+                        <li>document.querySelectorAll()
+                            <ul>
+                                <li>by class: document.querySelectorAll('.hero');</li>
+                            </ul>
+                        </li>
+                        <li>childNodes</li>
+                        <li>children</li>
+                        <li>firstChild</li>
+                        <li>lastChild</li>
+                        <li>nextSibling (for parent node)</li>
+                        <li>previousSibling</li>
+                        <li>Classes of an getElementById
+                            <ul>
+                                <li>A className property that allows the class of an element to be set directly. In addition, it can be used to find out the value of the class attribute:</li>
+                                <li>classList is a list of all the classes an element has
+                                    <ul>
+                                        <li>
+                                            wonderWoman.classList.add('warrior');
+                                        </li>
+                                        <li>wonderWoman.className;</li>
+                                        <li>wonderWoman.classList.remove('warrior');</li>
+                                        <li>wonderWoman.classList.toggle('hero');</li>
+                                        <li>wonderWoman.classList.contains('hero');</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Chapter 7 - Events
+                    <ul>
+                        <li>
+                            document.body.addEventListener("click", doSomething)
+                            <ul>
+                                <li>addEventListener('click', () => alert('You Clicked!'));</li>
+                                <li>
+            <pre>
+                <code>
+                    function doSomething() {
+                        alert('You Clicked!');
+                        }
+                        addEventListener('click',doSomething);
+                </code>
+            </pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>mousedown</li>
+                        <li>mouseup</li>
+                        <li>dblclick, (never use with 'click')</li>
+                        <li>mouseover</li>
+                        <li>mouseout</li>
+                        <li>mousemove</li>
+                        <li>keydown</li>
+                        <li>keyup</li>
+                        <li>keypress</li>
+                        <li><a href="./practiceCode/index.html">Chapter 7 - Practice Page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Questions
+                    <ul>
+                        <li>How many of the mouse, clicks, and button actions are commonly used for an item?</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
