@@ -1,0 +1,74 @@
+main {
+    margin: 1rem auto;
+    width: fit-content;
+    text-align: center;
+}
+h1 {
+    margin: 1rem;
+}
+table {
+    /* border: 1px solid black; */
+    padding: 0;
+    border-spacing: 0;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    text-align: center;
+    font-size: 2rem;
+}
+
+tr:nth-child(1) td {
+    border-bottom: 4px solid black;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+tr:nth-child(2) td {
+    border-bottom: 4px solid black;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+td:nth-child(1) {
+    border-right: 4px solid black;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+td:nth-child(2) {
+    border-right: 4px solid black;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(255, 209, 92);
+    border: 3px solid rgba(255, 209, 92, .5);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(255, 209, 92, .5);
+}
+
+.winner {
+    background-color: rgb(2, 72, 119);
+    color: white;
+}
