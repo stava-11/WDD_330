@@ -3,8 +3,9 @@ main {
     width: fit-content;
     text-align: center;
 }
-h1 {
-    margin: 1rem;
+h1.wk_4_title {
+    margin: 2rem 0 0;
+    padding: 0;
 }
 table {
     /* border: 1px solid black; */
@@ -55,7 +56,9 @@ td:nth-child(2) {
 }
 
 button {
-    margin: 2rem;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: bold;

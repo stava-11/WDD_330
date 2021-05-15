@@ -1,5 +1,6 @@
 let player1 = true; //player 1 is X
 let play = true;
+let clickCount = 0;
 
 document.getElementById("1x1").addEventListener("click", playerturn);
 document.getElementById("1x2").addEventListener("click", playerturn);
@@ -25,13 +26,14 @@ function playerturn() {
                 player1 = true;
             }
         }
+        clickCount++;
     }
     checkwin();
 }
 
 function checkwin() {
     grid = document.querySelectorAll('#myTable td');
-    //check vert
+    // check vert
     let i = 0;
     for (i = 0; i < 3; i++) {
         if (grid[i].innerHTML != ''){
@@ -40,7 +42,7 @@ function checkwin() {
             }
         }
     }
-    //check horizontal
+    // check horizontal
     for (i = 0; i < 7; i += 3) {
         if (grid[i].innerHTML != ''){
             if (grid[i].innerHTML === grid[i+1].innerHTML && grid[i+1].innerHTML === grid[i+2].innerHTML) {
@@ -48,17 +50,23 @@ function checkwin() {
             }
         }
     }
-    //diagonal down
+    // diagonal down
     if (grid[0].innerHTML != ''){
         if (grid[0].innerHTML == grid[4].innerHTML && grid[4].innerHTML == grid[8].innerHTML) {
             checkWinner(0, 0, 4, 8);
         }
     }
-    //diagonal up
+    // diagonal up
     if (grid[2].innerHTML != ''){
         if (grid[2].innerHTML == grid[4].innerHTML && grid[4].innerHTML == grid[6].innerHTML) {
             checkWinner(2, 2, 4, 6);
         }
+    }
+    // tie game
+    if (clickCount == 9 && play == true) {
+        document.getElementById("title").innerText = "Tie Game!";
+        document.querySelectorAll('#myTable td').forEach(e => e.classList.add("winner"));
+        play = false;
     }
 }
 
@@ -87,4 +95,5 @@ function reset() {
     document.getElementById("title").innerText = "Tic Tac Toe"
     player1 = true;
     play = true;
+    clickCount = 0;
 }
