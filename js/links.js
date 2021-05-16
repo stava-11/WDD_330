@@ -5,23 +5,23 @@ const links = [
     },
     {
         label: "Week 1",
-        url: "wk_01/index.html"
+        url: "wk_01/"
     },
     {
         label: "Week 2",
-        url: "wk_02/index.html",
-        url_team: "wk_02/team_activity/index.html"
+        url: "wk_02/",
+        url_team: "wk_02/team_activity/"
     },
     {
         label: "Week 3",
-        url: "wk_03/index.html",
-        url_practice: "wk_03/practiceCode/index.html",
-        url_team: "wk_03/team_activity/index.html"
+        url: "wk_03/",
+        url_practice: "wk_03/practiceCode/",
+        url_team: "wk_03/team_activity/"
     },
     {
         label: "Week 4",
-        url: "wk_04/index.html",
-        // url_practice: "wk_04/practiceCode/index.html",
-        url_team: "wk_04/team_activity/index.html"
+        url: "wk_04/",
+        url_practice: "wk_04/practiceCode/",
+        url_team: "wk_04/team_activity/"
     }
 ]

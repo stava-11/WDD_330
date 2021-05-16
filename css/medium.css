@@ -1,0 +1,68 @@
+/* 45rem is also 640px when basefont is 16px */
+@media only screen and (min-width: 48rem) {
+
+    
+nav {
+    margin: 0;
+    padding: 1rem 0;
+    z-index: 1;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+nav ul, ol {
+    list-style-type: none;
+    max-width: 100%;
+}
+
+nav ul li {
+    padding: .5rem;
+    text-align: left;
+}
+
+nav ul li a {
+    margin: .2rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li ol{
+    max-width: 150px; 
+    background: #f2f2f2;
+    border: 1px black solid;
+    list-style: none;
+    padding-left: 0;
+    display: none;
+}
+
+nav ul li:hover{
+    background-color: white;
+    max-width: 200px;
+    
+}
+
+nav ul li:hover a{
+    color: black;
+}
+
+nav ul li:hover ol{
+    display: block;
+    margin: .5rem 0 .5rem;
+}
+
+nav ul li ol li{
+    display: block;
+}
+
+nav ul li ol li:hover{
+    display: block;
+    background: #cecdcd;
+}
+
+nav ol li a {
+    color:rgb(196, 110, 4);
+    text-decoration: none;
+    margin: 0.5rem;
+}
