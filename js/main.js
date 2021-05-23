@@ -1,11 +1,11 @@
 
 for (item of links){
     let lbl = document.createElement('li');
-    lbl.innerHTML = '<a href="' + item.url + '">' + item.label + '</a>';
-    if (item.url_team) {
+    lbl.innerHTML = '<a href="#">' + item.label + '</a>';
+    if (item.url) {
         let subMenu = document.createElement('ol');
         let subMenuItem = document.createElement('li');
-        subMenuItem.innerHTML = '<a href="' + item.url_team + '">Team Activity</a>';
+        subMenuItem.innerHTML = '<a href="' + item.url + '">Notes</a>';
         subMenu.appendChild(subMenuItem);
         lbl.appendChild(subMenu);
     }
@@ -13,6 +13,13 @@ for (item of links){
         let subMenu = document.createElement('ol');
         let subMenuItem = document.createElement('li');
         subMenuItem.innerHTML = '<a href="' + item.url_practice + '">Practice Activity</a>';
+        subMenu.appendChild(subMenuItem);
+        lbl.appendChild(subMenu);
+    }
+    if (item.url_team) {
+        let subMenu = document.createElement('ol');
+        let subMenuItem = document.createElement('li');
+        subMenuItem.innerHTML = '<a href="' + item.url_team + '">Team Activity</a>';
         subMenu.appendChild(subMenuItem);
         lbl.appendChild(subMenu);
     }

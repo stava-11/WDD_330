@@ -40,7 +40,7 @@ nav ul li ol{
 nav ul li:hover{
     background-color: white;
     max-width: 200px;
-    
+    transition-duration: 1s;
 }
 
 nav ul li:hover a{

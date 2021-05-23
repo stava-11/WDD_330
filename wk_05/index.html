@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 5 notes for WDD 330">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/large.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <title>Week 5</title>
+</head>
+<body>
+    <nav>
+        <h1 class="mainTitle">John Stavast</h1>
+        <section class="mainLinks">
+            <ul id="mainOL">
+                
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <h1>Week 5</h1>
+        <section>
+            <h2>Notes from reading</h2>
+            <article>
+                <ul>
+                    <li>
+                        Chapter 10 - Testing & Debugging
+                        <ul>
+                            <li>
+                                Exception: an error that produces a return value that can then be used by the program to deal with the error. <br>
+                                <img class="readingImages" src="images/exception.jpg" alt="exception example">
+                            </li>
+                            <li>
+                                Strict Mode: writing code in this will help reduce errors, just type 'use strict'at the top of the js file. Javascript modules already implement this and you do not need to add it to the file.
+                            </li>
+                            <li>
+                                Alert: this is the most basic form of debugginh, alert(). This will stop a program from running until the 'ok' is clicked.
+                            </li>
+                            <li>
+                                Console: console.log()
+                            </li>
+                            <li>
+                                Remove Debudding Code: remember to remove debugging code prior to shipping
+                            </li>
+                            <li>
+                                Error object:  can be created by the host environment when an exception occurs, or it can be created in the code using a constructor function
+                            </li>
+                            <li>
+                                Throw error: use 'throw' to cause the program to hault. Examples:<br>
+                                <img class="readingImages" src="images/throw.jpg" alt="throw example">
+                            </li>
+                            <li>
+                                Try, Catch, Finally
+                                <ul>
+                                    <li>
+                                        Try block: this will run the code inside the block as normal, but if an exception occurs it will pass the error object to the catch block.
+                                    </li>
+                                    <li>
+                                        Catch block: this recieves errors thrown by the try block. This only runs if an exception is thrown by the try block.
+                                    </li>
+                                    <li>
+                                        Finally block: this can be added after a catch block. This will always be executed after the try or catch block, regardless of whether an exception occurred or not.<br>
+                                        <img class="readingImages" src="images/tryCatchFinally.jpg" alt="try, catch, finally example">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Test-driven Develpment Workflow<br>
+                                <img class="readingImages" src="images/testDrivenDev.jpg" alt="Test-driven Development Workflow">
+                            </li>
+                            <li>
+                                Chapter Summary
+                                <ul>
+                                    <li>Bugs are unavoidable in code, and it’s best to find them early rather than later.</li>
+                                    <li>JavaScript can be put into strict mode using the string "use strict" . This can be used in a whole file or just a single function.</li>
+                                    <li>Linting tools can be used to ensure your code follows good practice and conventions.</li>
+                                    <li>Feature detection can check whether a method is supported before calling it, helping to avoid an exception being thrown.</li>
+                                    <li>The console and browser’s built-in debugging tool can be used to interactively find and fix bugs in code.</li>
+                                    <li>Exceptions can be thrown using the throw statement.</li>
+                                    <li>An error object is created when an exception occurs.</li>
+                                    <li>Any code placed inside a try block will pass any error objects to a catch block when an exception occurs. Any code inside a finally block will run if an exception does or does not occur.</li>
+                                    <li>Test-driven development is the practice of writing tests that fail, then writing the code that passes the test, then refactoring the code every time a new feature is implemented.</li>
+                                    <li>Test-driven development is the practice of writing tests that fail, then writing the code that passes the test, then refactoring the code every time a new feature is implemented.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script src="../js/links.js"></script>
+    <script src="../js/nav_sub_pages.js"></script>
+</body>
+</html>
