@@ -30,4 +30,9 @@ const links = [
         url: "wk_05/",
         url_team: "wk_05/team_activity/"
     }
+    ,
+    {
+        label: "Week 6",
+        url_practice: "wk_06/practiceCode/"
+    }
 ]

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 6 To Do List WDD 330">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/large.css" />
+    <link rel="stylesheet" href="../../css/medium.css" />
+    <link rel="stylesheet" href="../../css/small.css" /> -->
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <!-- <script defer src="script.js"></script> -->
+    <script src="js/main.js" type="module"></script>
+    <title>Week 6 Practice Activities</title>
+    
+</head>
+<body>
+    <nav>
+        <h1 class="mainTitle">John Stavast</h1>
+        <section class="mainLinks">
+            <ul id="mainOL">
+                <a href="../../">Back</a>
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <h1>Week 6 Practice Activities</h1>
+        <section>
+            <h2 tabindex="0">Todo List</h2>
+            <article class="newItemEntry">
+                <form id="itemEntryForm">
+                    <label for="newItem">
+                        Enter a new to do item
+                    </label><br>
+                    <input id="newItem" type="text" size="40" autocomplete="off" placeholder="Add Item" tabindex="0" /> <br>
+                    <label for="newItemDate">
+                        Date to be done
+                    </label><br>
+                    <input id="newItemDate" type="text" size="40" autocomplete="off" placeholder="Add Item" tabindex="0" />
+                    <br>
+                    <button id="addItem" class="button" title="Add new item" aria-label="add new item to list" tabindex="0">+</button>
+                </form>
+            </article>
+            <article class="listContainer">
+                <div class="listTitle">
+                    <h1>To Do List</h1>
+                    <button id="clearItems" class="button" title="clear the list" aria-label="Remove all items from the list" tabindex="0">Clear</button>
+                </div>
+                <hr />
+                <div id="listItems">
+                    <div class="item">
+                        <input type="checkbox" id="1" tabindex="0">
+                        <label for="1">eat</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="2" tabindex="0">
+                        <label for="2">sleep</label>
+                    </div>
+                </div>
+                <p id="confirmation" class="confirmation" aria-live="assertive"></p>
+            </article>
+        </section>
+    </main>
+    <!-- <script src="../../js/links.js"></script>
+    <script src="../../js/nav_sub_pages.js"></script> -->
+</body>
+</html>
