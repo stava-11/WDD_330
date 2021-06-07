@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 5 notes for WDD 330">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/large.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <title>Week 5</title>
+</head>
+<body>
+    <nav>
+        <h1 class="mainTitle">John Stavast</h1>
+        <section class="mainLinks">
+            <ul id="mainOL">
+                
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <h1>Week 7</h1>
+        <section>
+            <h2>CSS Battle</h2>
+            <article>
+                <img src="cssBattle.JPG" alt="CSS Battle">
+            </article>
+            <h2>Cross-Origin Resource Sharing (CORS)</h2>
+            <article>
+                <ul>
+                    <li>
+                        For securoty reasons, borwsers restrict cross-origin HTTP requests initiated form scripts. For example, XMLHttpRequest and the Fetch API follow the same-origin policy. This means that a web application using those APIs can only request resources from the same origin the application was loaded from unless the response from other origins includes the right CORS headers
+                    </li>
+                    <li>
+                        <img src="cors.JPG" alt="cors diagram">
+                    </li>
+                    <li>Simple Requests don't trigger a CORS preflight</li>
+                    <li>Preflighted requests are when the browser first sends an HTTP request using the OPTIONS method to the resource on the other origin, inorder to determine if the actual request is safe to send</li>
+                </ul>
+            </article>
+            <h2>Chapter 11 - Further Functions</h2>
+            <article>
+                <ul>
+                    <li>
+                        Memoization
+                        <ul>
+                            <li>
+                                The idea is to cache the value of a time consuming calculation to allow a list of options that can be used instead of constantly reduing the same calculations.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Safe use of strict
+                        <ul>
+                            <li>One of the problems with simply placing 'use strict' at the beginning of a file is that it will enforce strict mode on all the JavaScript in the file, and if you're using other people's code, there's no guarantee that they've coded in strict mode.</li>
+                            <li>Instead, use the strict mode inside and IIFE which ensures that only your code inside the IIFE is forced to use strict mode</li>
+                            <li><img src="iifeStrict.JPG" alt="IIFE example"></li>
+                        </ul>
+                    </li>
+                    <li>Functions that Define and Rewrite Themselves
+                        <ul>
+                            <li>
+                                <img src="rewriteFunctions.JPG" alt="functions that rewrite themselves">
+                            </li>
+                            <li>Recognize that if you set a property for the first naming of the function that this property will be lost if the function redefines itself in the same variable.</li>
+                        </ul>
+                    </li>
+                    <li>Promises
+                        <ul>
+                            <li>
+                                A promise represents the future result of an asynchronous operation. Promises don't do anything that can't already be achieved using callbacks, but they help simplify the process, and avoid the convoluted code that can result from using multiple callbacks 
+                            </li>
+                            <li>Promise Life Cycle
+                                <ul>
+                                    <li>
+                                        Resolved - the asynchronous operation was completed successfuly
+                                    </li>
+                                    <li>
+                                        Rejected - the asynchronous operation didn't wok as expected, wasn't successfully completed or resulted in an error.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <h2>AJAX</h2>
+            <article>
+                <ul>
+                    <li>Ajax is a technique that allows web pages to communicate assynchonously with a server, and it dynamically updates web pages without reloading. This enables data to be sent and received in the background, as well as portions of a page to be updated in response to user events, while the rest of the program continues to run.</li>
+                    <li> An Application programming interface (API) is a collection of methods that allows external access to another program or service. Many websites allow controlled access to their data via public APIs. This means that developers are able to interact with the data and create mashups of third-party services. The information that's returned by APIs is often serialized as JSON. Since the data is being provided by an external site, CORS will have to be enabled in order to access information from an API. Some services may also require authentication to access their APIs.</li>
+                    <li>FETCH API
+                        <ul>
+                            <li>The global fetch() method only has one mandatory argument, which is the URRL of hte resource you wish to fetch.</li>
+                            <li>
+                                <img src="fetchBasic.jpg" alt="fetch basic example">
+                            </li>
+                            <li>
+                                <img src="fetchIf.JPG" alt="Fetch If example">
+                            </li>
+                            <li>
+                                <img src="fetchRedirect.JPG" alt="Fetch Redirect">
+                            </li>
+                            <li>
+                                <img src="fetchTextResponse.JPG" alt="Fetch Text Response">
+                            </li>
+                            <li>
+                                <img src="fetchFileResponse.JPG" alt="Fetch File Response">
+                            </li>
+                            <li>
+                                <img src="fetchJSONResponse.JPG" alt="Fetch JSON Response">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script src="../js/links.js"></script>
+    <script src="../js/nav_sub_pages.js"></script>
+</body>
+</html>

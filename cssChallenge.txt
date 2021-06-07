@@ -1,0 +1,11 @@
+<div o><div p></div><div q></div></div><div b><div r></div><div s></div></div><body bgcolor=#222>
+<style>div[p],div[q]{background:#F2994a}div[p],div[r]{width:30;height:80;border-radius:0 0 0 10px}div[q],div[s]{width:80;height:30;border-radius:0 5px 0 10px;margin:-10 0}div[o]{transform:rotate(45deg)translateX(192px)translateY(56px)}div[r],div[s]{background:#2d9cdb}div[b]{transform:rotate(225deg)translateX(127px)translateY(-11px)}
+
+
+
+
+
+<div id="o"><div id="p"></div><div id="q"></div></div><div id="b"><div id="r"></div><div id="s"></div></div><body bgcolor=#222>
+<style>#p,#q{background:#F2994a}#p,#r{width:30;height:80;border-radius:0 0 0 10px}#q,#s{width:80;height:30;border-radius:0 5px 0 10px;margin:-10 0}#o{transform:rotate(45deg)translateX(192px)translateY(56px)}#r,#s{background:#2d9cdb}#b{transform:rotate(225deg)translateX(127px)translateY(-11px)}
+
+ 
