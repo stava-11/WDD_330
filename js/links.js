@@ -41,4 +41,17 @@ const links = [
         url: "wk_07/",
         url_team: "wk_07/team_activity/hiking-complete.html"
     }
+    ,
+    {
+        label: "Week 8",
+        url: "wk_08/",
+        url_team: "wk_08/team_activity/"
+    }
+    ,
+    {
+        label: "Week 9",
+        url: "wk_09/",
+        url_practice: "wk_09/practiceCode/",
+        url_team: "wk_09/team_activity/"
+    }
 ]

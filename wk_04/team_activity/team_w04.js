@@ -1,4 +1,4 @@
-let player1 = true; //player 1 is X
+let player1 = true; 
 let play = true;
 let clickCount = 0;
 

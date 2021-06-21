@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 2 Notes">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/large.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <title>Week 2</title>
+</head>
+<body>
+    <nav class="homeMain">
+        <h1 class="mainTitle">John Stavast</h1>
+        <section class="mainLinks">
+            <ul id="mainOL">
+                
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <h1>Week 8</h1>
+        <section>
+            <article>
+                <li>
+                    HTML5 & CSS3 for the Real World: 2nd Edition<br>
+                    <ul>
+                        <li>When multiple bindings have the same name, code can only see the innermost one.</li>
+                        <li>
+                            Function Declaration
+                            <ul>
+                                <li>
+                                    function getRectArea(width, height) {<br>
+                                        return width * height;<br>
+                                    };
+                                </li>
+                                <li>This function can be placed after it is used in the code, the others must come before they are used.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Function Expression
+                            <ul>
+                                <li>
+                                    const getRectArea = function(width, height) {<br>
+                                        return width * height;<br>
+                                    };
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Arrow Function
+                            <ul>
+                                <li>
+                                    const getRectArea = (width, height) => width * height;<br>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Closure
+                            <ul>
+                                <li>
+                                    Being able to reference a specific instance of a local binding in an enclosing scope
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Recursion
+                            <ul>
+                                <li>
+                                    Recursion is allowed in javascript. This means that the function can call itself.
+                                </li>
+                                <li> This is used to help simplify a complex problem.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </article>
+            <article>
+                <li>
+                    Chapter 4 - Data Structures
+                    <ul>
+                        <li>
+                            Object.keys will return an array of strings which contains the property names of the object.
+                        </li>
+                        <li>array.shift() will remove the first item in the array.</li>
+                        <li>array.unshift will add the item(s) to the beginning of the array.</li>
+                        <li>Rest Parameter
+                            <ul>
+                                <li>
+                                    let numbers = [5, 1, 7];<br>
+                                    console.log(max(...numbers));<br>
+                                    // -> 7                                
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Questions
+                    <ul>
+                        <li>What are some great examples of using recursion to break down a complex problem?</li>
+                    </ul>
+                </li>
+            </article>
+        </section>
+    </main>
+    <script src="../js/links.js"></script>
+    <script src="../js/nav_sub_pages.js"></script>
+</body>
+</html>
