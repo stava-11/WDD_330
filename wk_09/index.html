@@ -26,80 +26,59 @@
         <section>
             <article>
                 <li>
-                    HTML5 & CSS3 for the Real World: 2nd Edition<br>
+                    The Window Object<br>
                     <ul>
-                        <li>When multiple bindings have the same name, code can only see the innermost one.</li>
+                        <li>The global object in the browser environment is the wwindow object, this means that any global variable created is actually a property of the window object. In general you should not refer to the window object when calling these variables.</li>
                         <li>
-                            Function Declaration
-                            <ul>
-                                <li>
-                                    function getRectArea(width, height) {<br>
-                                        return width * height;<br>
-                                    };
-                                </li>
-                                <li>This function can be placed after it is used in the code, the others must come before they are used.</li>
-                            </ul>
+                            <img class="readingImages" src="images/globalVariable.jpg" alt="Global Variable">
+                        </li>
+                        <li>window.location property is an object that contains information about the URL of the current page. This is a read/write property.</li>
+                        <li>
+                            window.history property can be used to access information about any previously visited pages in the current browser session.
                         </li>
                         <li>
-                            Function Expression
-                            <ul>
-                                <li>
-                                    const getRectArea = function(width, height) {<br>
-                                        return width * height;<br>
-                                    };
-                                </li>
-                            </ul>
+                            window.screen object contains information about the screen the browser is displayed on.
                         </li>
                         <li>
-                            Arrow Function
-                            <ul>
-                                <li>
-                                    const getRectArea = (width, height) => width * height;<br>
-                                </li>
-                            </ul>
+                            Document object has properties and methods that deal with the page that has been loaded into the window.
                         </li>
-                        <li>Closure
-                            <ul>
-                                <li>
-                                    Being able to reference a specific instance of a local binding in an enclosing scope
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Recursion
-                            <ul>
-                                <li>
-                                    Recursion is allowed in javascript. This means that the function can call itself.
-                                </li>
-                                <li> This is used to help simplify a complex problem.</li>
-                            </ul>
+                        <li>
+                            windows.setTimeout() method accepts a callback to a function as its first paramter and a number of milliseconds as its second parameter.
                         </li>
                     </ul>
                 </li>
+                
             </article>
             <article>
                 <li>
-                    Chapter 4 - Data Structures
+                    HTML5 APIs
                     <ul>
                         <li>
-                            Object.keys will return an array of strings which contains the property names of the object.
+                            Data attribute is a way of embedding data in a web page using custom attributes that are ignored by the browser. They’re also private to a page, so are not intended to be used by an external service – their sole purpose is to be used by a JavaScript program. This means they’re perfect for adding data that can be used as a hook that the program utilizes to access information about a particular element on the page.
                         </li>
-                        <li>array.shift() will remove the first item in the array.</li>
-                        <li>array.unshift will add the item(s) to the beginning of the array.</li>
-                        <li>Rest Parameter
+                        <li>
+                            Names of the data- attribues can be decided by the developer, but must follow the following format
                             <ul>
                                 <li>
-                                    let numbers = [5, 1, 7];<br>
-                                    console.log(max(...numbers));<br>
-                                    // -> 7                                
+                                    Start with: data-
+                                </li>
+                                <li>
+                                    Contain only lowercase letters, numbers, hyphens, dots, colons or underscores
+                                </li>
+                                <li>
+                                    Include an optional string value
+                                </li>
+                                <li>
+                                    <img class="readingImages" src="images/data.jpg" alt="data- Attribute">
                                 </li>
                             </ul>
                         </li>
-                    </ul>
-                </li>
-                <li>
-                    Questions
-                    <ul>
-                        <li>What are some great examples of using recursion to break down a complex problem?</li>
+                        <li>
+                            Websocket is a new protocol that allows two-way communication with a server – also known as push messaging. This means that a connection is kept open and responses are ‘pushed’ to the client as soon as they are received.
+                        </li>
+                        <li>
+                            Canvas element was introduced to allow graphics to be drawn onto a web page in real time using Javascript. This is used in many things including charts.js
+                        </li>
                     </ul>
                 </li>
             </article>

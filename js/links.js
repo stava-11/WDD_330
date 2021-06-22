@@ -44,8 +44,6 @@ const links = [
     ,
     {
         label: "Week 8",
-        url: "wk_08/",
-        url_team: "wk_08/team_activity/"
     }
     ,
     {
