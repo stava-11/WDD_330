@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Week 4 team activity for WDD 330">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/normalize.css">
-    <link rel="stylesheet" href="../../css/large.css">
-    <link rel="stylesheet" href="../../css/medium.css">
-    <link rel="stylesheet" href="../../css/small.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Hiking</title>
-</head>
-<body>
-    <nav class="homeMain">
-        <h1 class="mainTitle">John Stavast</h1>
-        <section class="mainLinks">
-            <ul id="mainOL">
-                
-            </ul>
-        </section>
-    </nav>
-    <main>
-        <h1>Great hikes</h1>
-        <ul id="hikes" class="hikeStyles">
-        <!-- your hike list should be build here. -->
-        </ul>
+  <head>
+    <meta charset="utf-8" />
+    <title>Local Quakes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <heading>
+          <nav><ul id="mainNav"></ul></nav>
+        </heading>
+      </nav>
+    </header>
+    <main id="content">
+      <h1>Quake List</h1>
+        <label for="radius">Enter radius</label>
+        <input type="text" id="radius">
+        <button id="btnRadius">Enter Radius</button>
+      <ul id="quakeList" class="hikeStyles"></ul>
     </main>
-    <!-- <script src="hikes.js"></script> -->
-    <script src="main.js" type="module"></script>
-    <script src="../../js/links.js"></script>
-    <script src="../../js/nav_sub_pages.js"></script>
-</body>
+
+    <script src="index.js" type="module"></script>
+  </body>
 </html>

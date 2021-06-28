@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Week 5 notes for WDD 330">
+    <meta name="description" content="Week 10 notes for WDD 330">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/large.css">
     <link rel="stylesheet" href="../css/medium.css">
     <link rel="stylesheet" href="../css/small.css">
-    <title>Week 5</title>
+    <title>Week 10</title>
 </head>
 <body>
     <nav>
@@ -72,15 +72,15 @@
                         Wireframes
                         <ul>
                             <li>
-                                <img class="readingImages" src="images/small.jpg" alt="small wireframe">
+                                <img class="readingImages" src="./images/small.jpg" alt="small wireframe">
 
                             </li>
                             <li>
-                                <img class="readingImages" src="images/medium.jpg" alt="medium wireframe">
+                                <img class="readingImages" src="./images/medium.jpg" alt="medium wireframe">
 
                             </li>
                             <li>
-                                <img class="readingImages" src="images/large.jpg" alt="small wireframe">
+                                <img class="readingImages" src="./images/large.jpg" alt="large wireframe">
 
                             </li>
                         </ul>
@@ -104,6 +104,81 @@
                             <li>Fully functional by due date</li>
                         </ul>
                     </li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>MDN: Validating Forms</h2>
+            <article>
+                <ul>
+                    <li>Client Side validation is done in the browser and server-side validation is done on the server.</li>
+                    <li>3 Main Reasons for validation
+                        <ul>
+                            <li>
+                                We want to get the right data, in the right format
+                            </li>
+                            <li>
+                                We want to protect our users' data
+                            </li>
+                            <li>
+                                We want to protect ourselves
+                            </li>
+                        </ul>
+                        <li>
+                            WARNING: Never trust passed to your server from the client. Even if your form is validating correctly and preventing malformed input on the client-side, a malicious user can still alter the network request.
+                        </li>
+                        <li>
+                            Client-side Validation
+                            <ul>
+                                <li>
+                                    Built-in form validation uses HTML5 form validation and has better performance than Javascript, but is not as customizable as Javascript.
+                                    <ul>
+                                        <li>
+                                            'required' attribute
+                                        </li>
+                                        <li>
+                                            'pattern' attribute
+                                        </li>
+                                        <li>
+                                            Constrain the length of the entries (minlength, maxlength)
+                                        </li>
+                                        <li>
+                                            Constrain value of entries (number)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Javascript validation
+                                    <ul>
+                                        <li>
+                                            The Constraint Validation API
+                                            <ul>
+                                                <li>
+                                                    validationMessage: returns a localized message describing the validation constraints that the control doesn't satisfy.
+                                                </li>
+                                                <li>
+                                                    validity: returns ValidityState object that contains several properties describing the validity state of the element.
+                                                </li>
+                                                <li>
+                                                    willValidate: returns true if the element will be validated when the form is submitted, false otherwise.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                </li>
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </article>
+            <h2>MDN: Using Fetch</h2>
+            <article>
+                <ul>
+                    <li>Supplying Request Options</li>
+                    <ul>
+                        <li>
+                            <img src="./images/requestOptions.JPG" alt="request options">
+                        </li>
+                    </ul>
                 </ul>
             </article>
         </section>
