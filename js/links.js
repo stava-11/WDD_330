@@ -57,6 +57,6 @@ const links = [
         label: "Week 10",
         url: "wk_10/",
         // url_practice: "wk_09/practiceCode/",
-        // url_team: "wk_09/team_activity/"
+        url_team: "wk_10/team_activity/"
     }
 ]
