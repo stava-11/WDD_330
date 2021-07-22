@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script src="https://kit.fontawesome.com/4df52a8129.js" crossorigin="anonymous"></script>
+    <title>Final Project</title>
+</head>
+
+<body>
+    <div class="mainGrid" id="mainGrid">
+        <div class="bannerGrid">
+            <i id="logo" class="fas logo">&#xf015;</i>
+            <div class="titleSubtitle">
+                <h1 id="title">POCATELLO CHUBBUCK</h1>
+                <h2 id="subtitle">HOME AND YARD SERVICES</h2>
+            </div>
+            <h3 id="slogan">Call 208-523-3245 to tell your local business story!</h3>
+        </div>
+        <div id="bannerImages" class="bannerImages">
+            <div class="slanted-div" id="slanted-div-1">
+                <img src="images/cloudy.jpg" class="img-responsive"  id="imageOne" alt="img_1">
+            </div>
+            <div class="slanted-div" id="slanted-div-2">
+                <img src="images/cloudy.jpg" class="img-responsive"  id="imageTwo" alt="img_2">
+            </div>
+            <div class="slanted-div" id="slanted-div-3">
+                <img src="images/cloudy.jpg" class="img-responsive"  id="imageThree" alt="img_3">
+            </div>
+            <div id="slanted-div-4">
+                <div id="rightColumn">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option to change banner -->
+    <h2 class="changeOptionsTitle">Banner Change Options</h2>
+    <div class="container" id="bannerChangeOptions">
+        <div class="bannerImagesRule">
+            <p>Go to large view to be able to input images</p>
+        </div>
+
+        <!-- IMAGE ICON SAVE -->
+        <div class="iconSection">
+            <h3>Change Logo</h3>
+            <div class="userInput">
+                <label for="imgIcon">Icon Category: </label>
+                <select id="imgIcon" onchange="logoSelector(this.value)">
+                    <option>Choose...</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="autumn">Autumn</option>
+                    <option value="buildings">Buildings</option>
+                    <option value="business">Business</option>
+                    <option value="camping">Camping</option>
+                    <option value="charity">Charity</option>
+                    <option value="chess">Chess</option>
+                    <option value="communication">Communication</option>
+                    <option value="computers">Computers</option>
+                    <option value="construction">Construction</option>
+                    <option value="currency">Currency</option>
+                    <option value="design">Design</option>
+                    <option value="finance">Finance</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="food">Food</option>
+                    <option value="holiday">Holiday</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="household">Household</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="maps">Maps</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="medical">Medical</option>
+                    <option value="paymentAndShopping">Payment & Shoppig</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="travel">Travel</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="weather">Weather</option>
+                    <option value="winter">Winter</option>
+                </select>
+            </div>
+
+            <div class="hiddenDiv userInput" id="iconSubcat">
+                <label>Icon Subcategory: </label>
+                <div class="iconSubOptions" id="iconSubcatOptions"></div>
+            </div>
+
+            <!-- ICON COLOR -->
+            <div class="userInput">
+                <label for="iconColorCh">Icon Color: </label>
+                <input type="color" id="iconColorCh" onchange="changeIconColor(this.value)" value="#0000ff">
+            </div>
+
+            <!-- ICON SHADOW -->
+            <div class="userInput">
+                <label for="iconShadow">Icon Shadow: </label>
+                <input type="checkbox" id="iconShadow" name="iconShadow" onchange="iconShadow()">
+            </div>
+
+            <!-- ALT TEXT FOR ICON -->
+            <!-- <div class="userInput">
+                <label for="altTextIcon">Icon alternate text: </label>
+                <input type="text" id="altTextIcon" name="altTextIcon" onfocusout="changeIconAltText('logo', this.value)">
+            </div> -->
+        </div>
+
+            <!-- TEXT FOR MAIN TITLE -->
+        <div class="titleDetails">
+            <h3>Change Title. Subtitle & Slogan</h3>
+            <div class="userInput">
+                <label for="mainTitle">Main Title: </label>
+                <input type="text" id="mainTitle" onkeyup="mainTitleColorPicker(this.value)" name="mainTitle">
+            </div>
+            <div class="row" id="mainTitleOptions">
+            </div>
+
+            <!-- FONT SIZE FOR MAIN TITLE -->
+            <div class="userInput">
+                <label for="mainTitle">Main Title Size: </label>
+                <select id="titleREMSize" onchange="fontSizeChange('title', 'titleREMSize')">
+                    <option value="2.5rem">2.5</option>
+                    <option value="2.4rem">2.4</option>
+                    <option value="2.3rem">2.3</option>
+                    <option value="2.2rem">2.2</option>
+                    <option value="2.1rem">2.1</option>
+                    <option value="2rem">2</option>
+                    <option value="1.9rem">1.9</option>
+                    <option value="1.8rem">1.8</option>
+                    <option value="1.7rem">1.7</option>
+                    <option value="1.6rem">1.6</option>
+                    <option value="1.5rem">1.5</option>
+                    <option value="1.4rem">1.4</option>
+                    <option value="1.3rem">1.3</option>
+                    <option value="1.2rem">1.2</option>
+                    <option value="1.1rem">1.1</option>
+                    <option value="1rem">1</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <!-- TEXT FOR SUBTITLE -->
+            <div class="userInput">
+                <label for="subtitleCh">Subtitle: </label>
+                <input type="text" id="subtitleCh" onkeyup="subtOrSloganChange('subtitleCh', 'subtitle')"
+                    name="subtitle">
+            </div>
+
+            <!-- FONT SIZE FOR SUBTITLE -->
+            <div class="userInput">
+                <label for="mainTitle">Subtitle Size: </label>
+                <select id="subtitleREMSize" onchange="fontSizeChange('subtitle', 'subtitleREMSize')">
+                    <option value="2rem">2</option>
+                    <option value="1.9rem">1.9</option>
+                    <option value="1.8rem">1.8</option>
+                    <option value="1.7rem">1.7</option>
+                    <option value="1.6rem">1.6</option>
+                    <option value="1.5rem">1.5</option>
+                    <option value="1.4rem">1.4</option>
+                    <option value="1.3rem">1.3</option>
+                    <option value="1.2rem">1.2</option>
+                    <option value="1.1rem">1.1</option>
+                    <option value="1rem">1</option>
+                    <option value="0.9rem">0.9</option>
+                    <option value="0.8rem">0.8</option>
+                </select>
+            </div>
+
+            <!-- SUBTITLE COLOR -->
+            <div class="userInput">
+                <label for="subtitleColorCh">Subtitle Color: </label>
+                <input type="color" id="subtitleColorCh"
+                    onchange="changeSubtOrSloganColor('subtitle', 'subtitleColor', 'subtitleColorCh')"
+                    value="#0000ff">
+            </div>
+
+            <hr>
+
+            <!-- TEXT FOR SLOGAN -->
+            <div class="userInput">
+                <label for="sloganCh">Slogan: </label>
+                <input type="text" id="sloganCh" onkeyup="subtOrSloganChange('sloganCh', 'slogan')"
+                    name="sloganMain">
+            </div>
+
+            <!-- FONT SIZE FOR SLOGAN -->
+            <div class="userInput">
+                <label for="mainTitle">Slogan Size: </label>
+                <select id="sloganREMSize" onchange="fontSizeChange('slogan', 'sloganREMSize')">
+                    <option value="1.5rem">1.5</option>
+                    <option value="1.4rem">1.4</option>
+                    <option value="1.3rem">1.3</option>
+                    <option value="1.2rem">1.2</option>
+                    <option value="1.1rem">1.1</option>
+                    <option value="1rem">1</option>
+                    <option value="0.9rem">0.9</option>
+                    <option value="0.8rem">0.8</option>
+                    <option value="0.7rem">0.7</option>
+                </select>
+            </div>
+
+            <!-- SLOGAN COLOR -->
+            <div class="userInput">
+                <label for="sloganColorCh">Slogan Color: </label>
+                <input type="color" id="sloganColorCh"
+                    onchange="changeSubtOrSloganColor('slogan', 'sloganColor', 'sloganColorCh')" value="#0000ff">
+            </div>
+        </div>
+
+        <!-- BANNER IMAGES UPLOAD -->
+        <div class="imagesUpload">
+            <h3>Change Images</h3>
+            <!-- <label for="mainImage">CLICK TO GET IMAGE: </label>
+            <a href="https://pixlr.com/e/" target="_blank">PIXLR</a> -->
+            <div class="userInput">
+                <label for="bannerImageOne">Image One: </label>
+                <select id="bannerImageOne" onchange="loadImg(this.value, 'imageOne')">
+                    <option>Choose...</option>
+                    <option value="cloudy">Clouds</option>
+                    <option value="cloudyOcean">Ocean with Clouds</option>
+                    <option value="darkClouds">Dark Clouds</option>
+                    <option value="lightningClouds">Clouds with Lightning</option>
+                    <option value="pineneedleRain">Pine Needles with Rain</option>
+                    <option value="rainGrass">Wet Grass</option>
+                    <option value="umbrella">Umbrella</option>
+                    <option value="rainJogging">Jogging in the Rain</option>
+                    <option value="rainLights">Lights in the Rain</option>
+                    <option value="snowCabin">Cabin in the Snow</option>
+                    <option value="snowfall">Snowfall</option>
+                    <option value="snowmen">Snowmen</option>
+                    <option value="snowRoad">SnowRoad</option>
+                    <option value="xCountrySkiing">Cross Country Skiing</option>
+                    <option value="sunflowers">Sunflowers</option>
+                    <option value="sunnyBeach">Sunny Beach</option>
+                    <option value="sunnyField">Sunny Field</option>
+                    <option value="sunnyGrass">Sunny Grass</option>
+                </select>
+            </div>
+            <!-- <div class="userInput"> 
+                <label for="altTextImgOne">Img 1 alt text: </label>
+                <input type="text" id="altTextImgOne" name="altTextImgOne">
+            </div>   -->
+            <!-- IMAGE TWO IMAGE SAVE -->
+            <div class="userInput">
+                <label for="bannerImageTwo">Image Two: </label>
+                <select id="bannerImageTwo" onchange="loadImg(this.value, 'imageTwo')">
+                    <option>Choose...</option>
+                    <option value="cloudy">Clouds</option>
+                    <option value="cloudyOcean">Ocean with Clouds</option>
+                    <option value="darkClouds">Dark Clouds</option>
+                    <option value="lightningClouds">Clouds with Lightning</option>
+                    <option value="pineneedleRain">Pine Needles with Rain</option>
+                    <option value="rainGrass">Wet Grass</option>
+                    <option value="umbrella">Umbrella</option>
+                    <option value="rainJogging">Jogging in the Rain</option>
+                    <option value="rainLights">Lights in the Rain</option>
+                    <option value="snowCabin">Cabin in the Snow</option>
+                    <option value="snowfall">Snowfall</option>
+                    <option value="snowmen">Snowmen</option>
+                    <option value="snowRoad">SnowRoad</option>
+                    <option value="xCountrySkiing">Cross Country Skiing</option>
+                    <option value="sunflowers">Sunflowers</option>
+                    <option value="sunnyBeach">Sunny Beach</option>
+                    <option value="sunnyField">Sunny Field</option>
+                    <option value="sunnyGrass">Sunny Grass</option>
+                </select>
+            </div>
+            <!-- <div class="userInput">
+                <label for="altTextImgTwo">Img 2 alt text: </label>
+                <input type="text" id="altTextImgTwo" name="altTextImgTwo">
+            </div> -->
+            <!-- IMAGE THREE IMAGE SAVE -->
+            <div class="userInput">
+                <label for="bannerImageThree">Image Three: </label>
+                <select id="bannerImageThree" onchange="loadImg(this.value, 'imageThree')">
+                    <option>Choose...</option>
+                    <option value="cloudy">Clouds</option>
+                    <option value="cloudyOcean">Ocean with Clouds</option>
+                    <option value="darkClouds">Dark Clouds</option>
+                    <option value="lightningClouds">Clouds with Lightning</option>
+                    <option value="pineneedleRain">Pine Needles with Rain</option>
+                    <option value="rainGrass">Wet Grass</option>
+                    <option value="umbrella">Umbrella</option>
+                    <option value="rainJogging">Jogging in the Rain</option>
+                    <option value="rainLights">Lights in the Rain</option>
+                    <option value="snowCabin">Cabin in the Snow</option>
+                    <option value="snowfall">Snowfall</option>
+                    <option value="snowmen">Snowmen</option>
+                    <option value="snowRoad">SnowRoad</option>
+                    <option value="xCountrySkiing">Cross Country Skiing</option>
+                    <option value="sunflowers">Sunflowers</option>
+                    <option value="sunnyBeach">Sunny Beach</option>
+                    <option value="sunnyField">Sunny Field</option>
+                    <option value="sunnyGrass">Sunny Grass</option>
+                </select>
+            </div>
+            <!-- ALT TEXT FOR IMAGE THREE -->
+            <!-- <div class="userInput">
+                <label for="altTextImgThree">Img 3 alt text: </label>
+                <input type="text" id="altTextImgThree" name="altTextImgThree"><br>
+            </div> -->
+        </div>
+
+        <!-- BANNER BACKGROUND -->
+        <div class="bannerColors">
+            <h3>Change Banner Colors</h3>
+            <div class="userInput">
+                <label for="imgIcon">Banner Color: </label>
+                <input type="color" id="backgroundColorCh" onchange="changeBannerBGColor(this.value)"
+                    value="#589999">
+            </div>
+
+            <!-- BANNER SLANT ONE COLOR -->
+            <div class="userInput">
+                <label for="slantColorCh">Banner Angle Color: </label>
+                <input type="color" id="slantColorCh" onchange="changeSlantColor(this.value)" value="#ff6a00">
+            </div>
+
+            <!-- <div class="userInput">
+                <label for="slantColorCh">Save Copy: </label>
+                <select id="weather" onchange="submitCopy(this.value)">
+                    <option>Choose...</option>
+                    <option value="sun">Sunny</option>
+                    <option value="cloud">Cloudy</option>
+                    <option value="rain">Rain</option>
+                    <option value="snow">Snow</option>
+                </select>
+            </div> -->
+        </div>
+        
+        
+
+    </div>
+    <br />
+    <script src="js/finalProject.js"></script>
+</body>
+
+</html>

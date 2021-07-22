@@ -56,7 +56,10 @@ const links = [
     {
         label: "Week 10",
         url: "wk_10/",
-        // url_practice: "wk_09/practiceCode/",
         url_team: "wk_10/team_activity/"
+    },
+    {
+        label: "Final Project",
+        url: "finalProject/"
     }
 ]
